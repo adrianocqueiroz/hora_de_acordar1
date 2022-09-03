@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma1</title>
+</head>
+
+<body>
+    <p>Clique para exibir.</p>
+
+    <button onclick="nome2()">Clique aqui</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function nome2() {
+            var x;
+
+            var nome = prompt("Por gentileza, digite seu nome:");
+
+            if (nome != null) {
+                x = "Olá, " + nome + ". Seja bem vindo!";
+                document.getElementById("demo").innerHTML = x;
+            }
+        }
+    </script>
+
+    <!-- Optei por fazer nesse modelo também para praticar, pois havia visto essa forma de se fazer na internet. Então tentei verificar se daria certo, perdão Gabs.-->
+</body>
+
+</html>

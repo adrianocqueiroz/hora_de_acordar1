@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Matemáticas</title>
+</head>
+
+<body>
+    <h2>Criado e desenvolvido por Adriano Queiroz.</h2>
+
+    <script>
+
+        var escolha = parseInt(prompt("Selecione uma opção 1) Retângulo; 2) Quadrado; 3) Losango; 4) Trapézio; 5) Paralelogramo; 6) Triângulo 7) Círculo"))
+
+        if(escolha === 1){
+            retangulo();
+        }
+
+        else if(escolha === 2){
+            quadrado();
+        }
+
+        else if(escolha === 3){
+            losango();
+        }
+
+        else if(escolha === 4){
+            trapezio();
+        }
+
+        else if(escolha === 5){
+            paralelogramo();
+        }
+
+        else if(escolha === 6){
+            triangulo();
+        }
+
+        else if(escolha === 7){
+            circulo();
+        }
+
+
+
+        function retangulo(){
+            var base = prompt ("Por gentileza, insira o valor da base.")
+            var altura = prompt ("Por gentileza, insira o valor da altura.")
+            alert("O valor da área é: " + (base*altura))
+        }
+
+        function quadrado(){
+            var lado1 = prompt ("Por gentileza, insira o valor do lado 1.")
+            var lado2 = prompt ("Por gentileza, insira o valor do lado 2.")
+            alert("O valor da área é: " + (lado1*lado2**2))
+        }  
+
+        function losango(){
+            var maior = prompt("Por gentileza, digite a diagonal maior.");
+            var menor = prompt("Por gentileza, digite a diagonal menor.");
+            alert("O valor da área é: " + (maior*menor)/2)
+
+        }
+
+        function trapezio(){
+            var baseMaior = prompt("Por gentileza, digite a diagonal maior.");
+            var baseMenor = prompt("Por gentileza, digite a diagonal menor.");
+            var altura = prompt ("Por gentileza, insira o valor da altura.");
+            alert("O valor da área é: " + (baseMaior*baseMenor)*altura/2)
+        }
+
+        function paralelogramo(){
+            var base = prompt ("Por gentileza, insira o valor da base.")
+            var altura = prompt ("Por gentileza, insira o valor da altura.")
+            alert("O valor da área é: " + (base*altura))
+        }
+
+        function triangulo(){
+            var base = prompt ("Por gentileza, insira o valor da base.")
+            var altura = prompt ("Por gentileza, insira o valor da altura.")
+            alert("O valor da área é: " + (base*altura)/2)
+        }
+
+        function circulo(){
+            var raio = prompt("Digite o valor do raio");
+            alert ("O valor do π (pi) 3.14");
+            alert("O valor da área é: " + (3.14*raio**2))
+        }
+
+        alert("Obrigado por usar o programa. Sempre será bem vindo!")
+
+    </script>
+    
+</body>
+
+</html>
